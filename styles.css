@@ -1,0 +1,104 @@
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-around;
+  /* align-items: baseline; */
+  width: 1000px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 35px;
+  border-radius: 40px;
+
+}
+
+.left-side {
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+.boxes-div {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+
+
+}
+
+.box {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  height: 50px;
+  border-radius: 10px;
+
+
+ display: grid;
+ align-items: center;
+ justify-content: center;
+
+
+}
+
+.right-side {
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 15px;
+  color: hsl(189, 41%, 97%);
+}
+
+.bill-input {
+  /* padding-left: 250px; */
+  width: 80%;
+  text-align: right;
+  background: url("https://cdn-icons-png.flaticon.com/512/126/126179.png") no-repeat left;
+  background-size: 20px;
+  border-radius: 20px;
+  height: 50px;
+}
+
+input[type="text"]::placeholder {
+        text-align: right;
+      }
+input[type="text"] {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px; text-align: center; }
+.attribution a {
+   color: hsl(228, 45%, 44%); }
