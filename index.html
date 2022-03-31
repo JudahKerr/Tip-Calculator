@@ -31,27 +31,38 @@
           <div class="15 box">15%</div>
           <div class="25 box">25%</div>
           <div class="50 box">50%</div>
-          <div class="custom box">Custom</div>
+          <div id="custom" class="box">Custom</div>
         </div>
 
       </div>
       <div class="people-amount">
         <h3>Number of People</h3>
-        <input type="text" name="peopleAmount">
+        <input class="people-input" type="text" name="peopleAmount" placeholder="1">
       </div>
 
     </div>
     <div class="right-side">
       <div class="tip-amount">
-        <h3>Tip Amount</h3>
-        <p>/ person</p>
+        <div class="tip-text">
+          <h3>Tip Amount</h3>
+          <p>/ person</p>
+        </div>
+        <div class="tip-output">
+          <h2>$0.00</h2>
+        </div>
       </div>
       <div class="total-amount">
-        <h3>Total</h3>
-        <p>/ person</p>
+        <div class="total-text">
+          <h3>Total</h3>
+          <p>/ person</p>
+        </div>
+        <div class="total-output">
+          <h2>$0.00</h2>
+        </div>
+
       </div>
 
-      <button type="button" name="reset">RESET</button>
+      <button type="button" name="reset"><strong>RESET</strong></button>
     </div>
 
 
@@ -62,6 +73,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Judah Kerr</a>.
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
