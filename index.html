@@ -21,23 +21,23 @@
     <div class="left-side">
       <div class="bill">
         <h3>Bill</h3>
-        <input class="bill-input" type="text" name="bill" placeholder="0">
+        <input class="bill-input" id="bill" type="text" placeholder="0">
       </div>
       <div class="tip-selection">
         <h3>Select Tip %</h3>
         <div class="boxes-div">
-          <div class="5 box">5%</div>
-          <div class="10 box">10%</div>
-          <div class="15 box">15%</div>
-          <div class="25 box">25%</div>
-          <div class="50 box">50%</div>
-          <div id="custom" class="box">Custom</div>
+          <button type="button" class="5 box" value="5" name="button">5%</button>
+          <button type="button" class="10 box" value="10" name="button">10%</button>
+          <button type="button" class="15 box" value="15" name="button">15%</button>
+          <button type="button" class="25 box" value="25" name="button">25%</button>
+          <button type="button" class="50 box" value="50" name="button">50%</button>
+          <button type="button" id="custom" class="box" name="button">Custom</button>
         </div>
 
       </div>
       <div class="people-amount">
         <h3>Number of People</h3>
-        <input class="people-input" type="text" name="peopleAmount" placeholder="1">
+        <input class="people-input" type="text" name="peopleAmount" value="1" placeholder="1">
       </div>
 
     </div>
@@ -48,7 +48,7 @@
           <p>/ person</p>
         </div>
         <div class="tip-output">
-          <h2>$0.00</h2>
+          <h2 id="tip-output-display">$0.00</h2>
         </div>
       </div>
       <div class="total-amount">
@@ -57,15 +57,20 @@
           <p>/ person</p>
         </div>
         <div class="total-output">
-          <h2>$0.00</h2>
+          <h2 id="total-amount-display">$0.00</h2>
         </div>
 
       </div>
 
-      <button type="button" name="reset"><strong>RESET</strong></button>
+      <button type="button" class="reset"><strong>RESET</strong></button>
     </div>
 
 
+  </div>
+  <div class="custom">
+    <h3>Please enter a tip %</h3>
+    <input type="text" class="custom-input" name="custom">
+    <button type="button" class="custom-button" name="custom-button">CONFIRM</button>
   </div>
 
 
