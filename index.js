@@ -1,17 +1,22 @@
+//
 //Declaring DOM variables
-let tip5 = $(".5");
-let tip10 = $(".10");
-let tip15 = $(".15");
-let tip25 = $(".25");
-let tip50 = $(".50");
-let tipcustom = $("#custom");
-let tips = [tip5, tip10, tip15, tip25, tip50, tipcustom];
-let resetBtn = $(".reset");
-let buttons = document.getElementsByClassName("box");
-let customButton = $(".custom-button");
+//
+const tip5 = $(".5");
+const tip10 = $(".10");
+const tip15 = $(".15");
+const tip25 = $(".25");
+const tip50 = $(".50");
+const tipcustom = $("#custom");
+const tips = [tip5, tip10, tip15, tip25, tip50, tipcustom];
+const resetBtn = $(".reset");
+const buttons = document.getElementsByClassName("box");
+const customButton = $(".custom-button");
+
 let customPercent = 0;
 
+//
 //Custom Percent DIV Logic
+//
 tipcustom.on("click", function() {
   document.querySelector(".custom").style.visibility = "visible"
 })
@@ -21,7 +26,9 @@ customButton.on("click", function() {
   customTip(customPercent);
 })
 
+//
 //Reset Button Logic
+//
 resetBtn.on("click", function() {
   $("#tip-output-display").text("$0.00");
   $("#total-amount-display").text("$0.00");
@@ -36,7 +43,9 @@ resetBtn.on("click", function() {
   }
 })
 
+//
 //Calculating Custom Tip if selected
+//
 function customTip(num) {
   let bill = document.getElementById("bill").value;
   let peopleAmount = document.querySelector(".people-input").value;
@@ -55,8 +64,9 @@ function customTip(num) {
 
 }
 
-
+//
 //Main Logic for Tip Buttons
+//
 for (let i = 0; i < tips.length; i++) {
   tips[i].on("click", function() {
     let bill = document.getElementById("bill").value;
@@ -82,7 +92,9 @@ for (let i = 0; i < tips.length; i++) {
   })
 }
 
+//
 //Toggle between which button is selected
+//
 function toggleClass(el) {
   for (let i = 0; i < buttons.length; i++) {
     if (buttons[i].classList.contains("clicked") === true) {
